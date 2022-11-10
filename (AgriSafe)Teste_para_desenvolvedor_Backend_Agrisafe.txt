@@ -1,0 +1,42 @@
+Teste para desenvolvedor Backend Agrisafe
+
+Escopo:
+
+Uma empresa possui uma frota de caminhões, onde cada caminhoneiro realiza por mês um número X de entregas.
+
+Cada entrega possui um tipo de produto a ser transportado, e cada produto possui um valor Y associado, além de estar associado a duas cidades (origem e destino). Desconsiderando fatores como a distância das cidades, veiculo etc, crie um sistema de requisições no padrão REST que contenha:
+
+- CRUD de caminhoneiros
+- Associe caminhoneiros a viagens feitas bem como os detalhes de cada viagem
+- Liste as viagens de um caminhoneiro. Preferivel: Adicionar filtragem, como exemplo por intervalo de datas, tipo de produto transportado, cidade etc.
+
+- OPCIONAL:
+
+Agrupando por mês e nome, listar os transportes de um caminhoneiro, exemplo:
+
+[
+  {
+    "name": "Luiz",
+    "deliveries":[
+      'jan': [
+        {
+          "payload_type": 'iron',
+          "count": '10',
+          "total billing": "R$ 200"
+        }
+      ],
+      'fev': [
+        {
+          "payload_type": 'iron',
+          "count": '10',
+          "total billing": "R$ 200"
+        }
+      ]
+    ]
+  }
+]
+
+- Não é necessário autenticação
+- Testes são IMPRESCINDIVEIS
+- Qualidade e clareza de código são fatores relevantes
+
