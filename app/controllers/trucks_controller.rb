@@ -10,7 +10,8 @@ class TrucksController < ApplicationController
 
   # GET /trucks/1
   def show
-    render json: @truck
+    # @truck.products, only: [:payload_name, :count, :total_billing]
+    # render json: @truck#{ name: @truck.name, deliveries: @truck.deliveries }, only: [:name, :pay:load_name, :count, :total_billing] # { name: @truck, deliveries: @truck.deliveries }
   end
 
   # POST /trucks
