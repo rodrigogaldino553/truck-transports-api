@@ -9,6 +9,8 @@ class TrucksController < ApplicationController
   # GET /trucks/1
   def show
    
+   # binding.pry
+   
   end
 
   # POST /trucks
